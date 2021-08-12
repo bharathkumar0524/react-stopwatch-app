@@ -1,0 +1,106 @@
+/* Write CSS here */
+* {
+  margin: 0px;
+}
+.app-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+  background-size: cover;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .app-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    background-size: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+}
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.heading {
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+}
+.stopwatch-timer-container {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px;) {
+  .stopwatch-timer-container {
+    width: 300px;
+    height: 300px;
+  }
+}
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.timer-img {
+  width: 50%;
+}
+.timer-heading {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.timer {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.start {
+  background-color: #1db05f;
+}
+.stop {
+  background-color: #ef0d36;
+}
+.reset {
+  background-color: #eaa800;
+}
